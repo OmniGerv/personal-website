@@ -1,0 +1,23 @@
+woodworking
+dfm
+fea
+audio electronics
+c++
+python
+cad
+fusion 360
+solidworks
+inventor
+3d printing
+cnc
+laser cutting
+electronics
+pcb design
+firmware
+mechanical design
+product design
+prototyping
+materials science
+manufacturing
+assembly
+testing
