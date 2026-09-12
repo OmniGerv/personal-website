@@ -272,6 +272,12 @@ section {
   border: 1px solid var(--border-color);
 }
 
+.project-detail-image-no-bg {
+  width: 100%;
+  border-radius: 6px;
+  border: 0px solid var(--border-color);
+}
+
 .project-section {
   margin: 2rem 0;
 }
