@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beam Light - Tristan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <img src="tristan-logo.png" alt="Logo" class="logo">
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="project-detail">
+        <div class="project-detail-header">
+          <h1>Beam Light</h1>
+          <div class="tags-container">
+            <span class="tag">electronics</span>
+            <span class="tag">product design</span>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">Overview</h3>
+          <p>This project was a decorative walnut beam to serve as a visual divider between our appartments living and dining room. </p>
+        </div>
+
+        <div class="project-detail-gallery">
+          <!-- <img src="cube-light/hero.png" alt="Beam Light" class="project-detail-image"> -->
+             <iframe class="project-video" src="https://youtube.com/shorts/ObtJlvNTTBA" title="Beam Light demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">Challenges & Solutions</h3>
+          <p>This beam is a 3x4 inch beam made from solid walnut. The main concern with this constructions is the warping of the wood with the seasonal changes in humidity. To combat this, the beam was constructed from a two 1.5x4 inch planks of walnut that were cut from the same larger plank. These two pieces were then glued together face to face to form the final beam. Gluing the pieces face to face means that natural tendencies to warp in one plank counteracts the same tendancies in the other plank, meaning the beam stays straight over time.</p>
+
+          <p>To mount the LEDs to the beam, two channels were routed along the length of the beam. These channels provide a recess for the LEDs to sit in, ensuring no hot spots can be seen while the beam is viwed from the side. The light is only visible after being reflected off the wall to ensure proper diffusion.</p>
+
+          <p>The control interface needed to be very subtle to blend in with the simple aesthetic of the beam. A walnut knob was mounted on the side of the beam to act as the only input. It is mounted on a rotary encoder with pushbutton functionality. A single press of the pushbutton toggles the light on and off. A long press of the buton changes the lighting pattern. Turning the knob adjusts the brightness.</p>
+
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">Technical Details</h3>
+          <p>The following are a list of the components used in this project:</p>
+          <ul>
+            <li>ESP32 with over the air updates</li>
+            <li>322 WS2812B RGB LEDs from a strip controlled with the FastLED library</li>
+            <li>Rotoary encoder for user input</li>
+          </ul>
+        </div>
+
+        <!-- <div class="project-section">
+          <h3 class="project-section-title">Results & Outcomes</h3>
+          <p>She loves it! It's great for setting the vibe at parties, and as ambient light while camping!</p>
+        
+         
+        </div> -->
+
+        
+
+        <!-- <div class="project-section">
+          <h3 class="project-section-title">Learnings</h3>
+          <p>Reflect on what you learned from this project.</p>
+        </div> -->
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <a href="portfolio.html">← Back to Portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tristan. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -32,32 +32,48 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Overview</h3>
-          <p>A portable battery-powered lighting solution.</p>
+          <p>This project was a birthday gift for my partner Liz. It is a cube shaped lamp that features 216 individually addressable RGB LEDs. It features 5 different light patterns, with control over saturation and color themes. The light is battery powered and USB-C rechargable so it can be used anywhere, such as camping trips.</p>
         </div>
 
         <div class="project-detail-gallery">
-          <img src="battery-powered-lamp/hero.jpg" alt="Battery-Powered Lamp" class="project-detail-image">
+          <!-- <img src="cube-light/hero.png" alt="Battery-Powered Lamp" class="project-detail-image"> -->
+             <iframe class="project-video" src="https://www.youtube.com/embed/oSLvt2CoP5c" title="Battery-powered lamp demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Challenges & Solutions</h3>
-          <p>Add details about the challenges faced during the project and how they were solved.</p>
+          <p>The original design featured solid wood rings to divide the rows of LEDs. This proved to be the wrong approach since the expansion and contraction of the wood across the grain as the seasons change could cause cracking in the wood. Furthermore, the aesthetic of alternating end and edge grain faces of the wood was not as visually appealing as continuous face grain. The design was then changed to have 3D printed rings with stained oak veneer adhered to the visibe surface. A piece of plywood was used for the top for its dimensional stability. </p>
+
+          <p>To keep the user interface simple, a 4 capacitive touch button design was used to minimize moving parts and increase reliability. The four buttons are: power, minus, plus, and mode. The minus and plus buttons control the brightness of the lamp and the mode button changes the light pattern. As an added bonus feature, the saturation of the colors can be adjusted by holding the mode button and tapping the minus button. The color theme of the lamp can also be chaned by holding the mode button and tapping the plus button. This cycles the patters through the color wheel to set the desired mood. </p>
+
+          <p>The light diffuser rings are 3D printed from translucent plastic to provide even light distribution. </p>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Technical Details</h3>
-          <p>Explain the technical approach, tools used, and methodology.</p>
+          <p>The following are a list of the components used in this project:</p>
+          <ul>
+            <li>ESP32 with over the air updates</li>
+            <li>216 WS2812B RGB LEDs from a strip controlled with the FastLED library</li>
+            <li>4x 18650 battery cells with an off the shelf BMS for charging</li>
+            <li>USB-C charging port</li>
+            <li>4 silver off the shelf hole plugs for the capacitive touch buttons</li>
+          </ul>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Results & Outcomes</h3>
-          <p>Describe the final outcome, results, and any metrics or feedback.</p>
+          <p>She loves it! It's great for setting the vibe at parties, and as ambient light while camping!</p>
+        
+         
         </div>
 
-        <div class="project-section">
+        
+
+        <!-- <div class="project-section">
           <h3 class="project-section-title">Learnings</h3>
           <p>Reflect on what you learned from this project.</p>
-        </div>
+        </div> -->
       </div>
 
       <div style="margin-top: 3rem;">

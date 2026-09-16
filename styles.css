@@ -272,6 +272,14 @@ section {
   border: 1px solid var(--border-color);
 }
 
+.project-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1rem;
+  /* border: 1px solid var(--border-color);
+  border-radius: 6px; */
+}
+
 .project-detail-image-no-bg {
   width: 100%;
   border-radius: 6px;
