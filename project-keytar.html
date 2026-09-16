@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keytar - Tristan</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <div class="header-content">
@@ -32,24 +34,74 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Overview</h3>
-          <p>A custom electronic musical instrument design.</p>
+          <p>A Covid passion project. The inspiration for this project came from a the connection guitarists feel with
+            their instrument. Playing a guitar can create an emotional bond between the player and the instrument, as
+            the guitar is made from natural materials making each one unique. One can also feel the vibrations of the
+            sound resonating against their body as one holds and plays the instrumnet. This connection can be strong
+            enough for guitartists to anthropomorphize their guitars such as calling them "she", giving them names and
+            swining them around the stage as if they were dancing with it. Being a keyboard player, I always felt there
+            was a lack of that same connection between keyboardists and their instrument. Exisiting keytars begin to
+            solve this problem by allowing keyboardists to move about the stage while playing their instrument, but lack
+            any sort of natural uniqueness my the way of organic materials. Most keytar designs have sharp, angular,
+            injection molded plastic bodies, making them seem lifeless.</p>
+
+          <p>Another source of inspiration taken from guitarists is a technique called "bending". This technique allows
+            guitarists to create expressive pitch increases by adding tension to the strings by bending them upward.
+            This adds a very human element to their performance, even to the point of defining the "sound" of many
+            famous guitarists. I wanted to incorporate a similar concept into the keytar, allowing keyboardists to add
+            their own unique and expressive flairs while playing.</p>
+
+          <p>My goal was to create an instrument for keyboardists to be able toemotionally connect with, by not only
+            making it portable, but giving the design more natural curves and materials, and adding some expressive
+            functionality.</p>
         </div>
 
         <div class="project-detail-gallery">
-          <img src="keytar/hero.jpg" alt="Keytar" class="project-detail-image">
+          <img src="keytar/t-keytar.jpg" alt="Keytar" class="project-detail-image">
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Challenges & Solutions</h3>
-          <p>Add details about the challenges faced during the project and how they were solved.</p>
+          <h4>Incorporating wood</h4>
+          <p>Ideally, this product would be made from a solid piece of wood, as guitars are, to give the most natural
+            feel, but I didn't have the milling capabilities at the time to pull off this construction. This is why the
+            base of the keytar was made from a piece of baltic birch plywood, where the rest of the components could be
+            fastened to. </p>
+
+          <p>There are a couple of other pieces of wood that make the design more organic. A small piece of trim above
+            the keys used as a structural and aesthetic element, as well as a fret board on the neck of the keytar. Due
+            to the nature of the way a keytar is held, the right hand plays high notes on the keyboard, while the left
+            hand is left mostly unused, other than some settings adjustments, and operating a bending control. In my
+            design, I wanted to retain the ability of the left hand to play bass notes, which is why I implimented a
+            fretboard whith capacitive frets to play bass notes. This fretboard was made from a solid piece of birtch.
+          </p>
+
+          <p>The most significat use of wood in the project is the carrying case, made from red oak boards and plywood.
+            The case clamshells like a regular guitar case, and has some space for accessories.
+          </p>
+
+          <img src="keytar/in-case.jpg" alt="Keytar" class="project-detail-image-small">
+
+
+          <h4>Note Bending</h4>
+          <p>Exisiting keybaords use bend wheels, which are controls that allow players to bend notes manually using
+            hteir left hand. This distracts the left hand fron other functions, and is very dissimilar from the guitar
+            bend, as it is performed by the same hand that is playing the note. To give the keytar player a similar
+            experience, I incorporated capacitive sensors that detect the location of the players finger on the key. A
+            player can then roll their finger over the key to create a bending effect, just like a guitar player. </p>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Technical Details</h3>
-          <p>Explain the technical approach, tools used, and methodology.</p>
+          <p>Each octave contains 12 keys with capacitive sensors for note detection and bending functionality. They are
+            all controlled by a microcontoller under the keys. Four of these are daisy chained together on an I2C bus to
+            form the keybed. They are then connected to a fifth microcontroller that manages the neck. </p>
+
+          <p>All plastic components are 3D printed from ABS and acetone vapor smoothed to acheive an injection molded
+            like finish. </p>
         </div>
 
-        <div class="project-section">
+        <!-- <div class="project-section">
           <h3 class="project-section-title">Results & Outcomes</h3>
           <p>Describe the final outcome, results, and any metrics or feedback.</p>
         </div>
@@ -57,8 +109,10 @@
         <div class="project-section">
           <h3 class="project-section-title">Learnings</h3>
           <p>Reflect on what you learned from this project.</p>
-        </div>
+        </div> -->
+        <!-- <img src="keytar/hero.jpeg" alt="Keytar" class="project-detail-image"> -->
       </div>
+
 
       <div style="margin-top: 3rem;">
         <a href="portfolio.html">← Back to Portfolio</a>
@@ -70,4 +124,5 @@
     <p>&copy; 2026 Tristan. All rights reserved.</p>
   </footer>
 </body>
+
 </html>

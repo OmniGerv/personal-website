@@ -280,10 +280,10 @@ section {
   border-radius: 6px; */
 }
 
-.project-detail-image-no-bg {
-  width: 100%;
+.project-detail-image-small {
+  width: 50%;
   border-radius: 6px;
-  border: 0px solid var(--border-color);
+  border: 1px solid var(--border-color);
 }
 
 .project-section {
