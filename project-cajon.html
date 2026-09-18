@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cajon - Tristan</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <div class="header-content">
@@ -14,6 +16,7 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="offerings.html">Offerings</a>
         <a href="contact.html">Contact</a>
+        <a href="allong-the-way.html">Along The Way</a>
       </nav>
       <img src="tristan-logo.png" alt="Logo" class="logo">
     </div>
@@ -32,24 +35,36 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Overview</h3>
-          <p>A custom percussion instrument design.</p>
+          <p>I've always admired the way cajons can bring rhythm to a musical performance in such a small package, at
+            least compared to their larger counterparts, the drum kit. With this, I always thought it would be great if
+            they could be amplified like a guitar, or even be able to pass though pedals for effects and looping. That,
+            and they always seem to be hard on the drummers backs, since they must bend over quite far to reach the bass
+            drum sound at the botom of the cajon. I set out to create a cajon that addresses these issues.</p>
         </div>
 
         <div class="project-detail-gallery">
-          <img src="cajon/hero.jpg" alt="Cajon" class="project-detail-image">
+          <img src="cajon/cajon2.jpeg" alt="Cajon" class="project-detail-image">
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Challenges & Solutions</h3>
-          <p>Add details about the challenges faced during the project and how they were solved.</p>
+
+          <h4>Bass drum pedal</h4>
+          <p>This cajon was designed with the snare sound near the top of the face and tom sound near the middle of the face. The bass drum was played using a pedal that came out the front face near the players right foot. This pedal is connected to a mallet that plays on a panel near the back face of the cajon. This allows the player to stay mostly upright while playing, alleviating back strain.</p>
+
+          <h4>Amplification</h4>
+          <p>The cajon was designed to have 3 main sounds; snare, tom and bass drum, so I decided to add 3 pickups, one for each sound. These were then passed though a passive volume and tone circuit for the user to conrol the relative sound volume and filtering. Since the cajon's circuitry was passive, the bass frequency response was limited, so an externalamp whith bass boost was used to get the booming bass drum sound. </p>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Technical Details</h3>
-          <p>Explain the technical approach, tools used, and methodology.</p>
+
+          <p>Constructed using red oak plywood, birch plywood, screws and 3D printed components. The screws fasten the red oak faces to the main body as these can be adjusted to tune the sound of the front face. Like a traditional cajon, snare drum snares are used near the top of the front face to give that sound the noise of a snare drum. </p>
+
+          <p>The control panel that hosts the volume and tone control, as well as te 1/4 inch jack, was CNC routed on a 3D printer I had retrofitted my dremel on (lol). I then used a laser engrave to engrave the labels for each control.</p>
         </div>
 
-        <div class="project-section">
+        <!-- <div class="project-section">
           <h3 class="project-section-title">Results & Outcomes</h3>
           <p>Describe the final outcome, results, and any metrics or feedback.</p>
         </div>
@@ -58,7 +73,7 @@
           <h3 class="project-section-title">Learnings</h3>
           <p>Reflect on what you learned from this project.</p>
         </div>
-      </div>
+      </div> -->
 
       <div style="margin-top: 3rem;">
         <a href="portfolio.html">← Back to Portfolio</a>
@@ -70,4 +85,5 @@
     <p>&copy; 2026 Tristan. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
