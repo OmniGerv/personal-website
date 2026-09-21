@@ -14,7 +14,7 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="offerings.html">Offerings</a>
         <a href="contact.html">Contact</a>
-        <a href="allong-the-way.html">Along The Way</a>
+        <!-- <a href="along-the-way.html">Along The Way</a> -->
       </nav>
       <img src="tristan-logo.png" alt="Logo" class="logo">
     </div>
@@ -35,8 +35,8 @@
         <div class="project-section">
           <h3 class="project-section-title">Overview</h3>
           <p>I am the co-founder of Omnitone Inc, a company that designs, manufactures and sells Eurorack synthesizer modules. 
-            This means that I have direct experience with the entire product developemnt cycle. 
-            Everything from product conceptualization, design, manufacturing and sourcing, programing, assembly, testing, QC, shipping and marketing.</p>
+            This means that I have direct experience with the entire product development cycle.
+            Everything from product conceptualization, design, manufacturing and sourcing, programming, assembly, testing, QC, shipping and marketing.</p>
         </div>
 
         <div class="project-detail-gallery">
@@ -45,11 +45,12 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Challenges & Solutions</h3>
-          <p>The biggest challenge I faced while designing these modules was the integration of the RGB lighting that needed to be functional and beautiful. 
+          <p>One of the biggest challenge I faced while designing these modules was the integration of the RGB lighting that needed to be functional and beautiful. 
             To get an aesthetically pleasing diffusion of light, I worked with our supplier to source a specific type of FR4 for our front panels that has as few blemishes as possible, and without a tint. 
             In the case where distinction between the individual LED pixels was needed (for a functional purpose), a custom light shroud was designed and manufactured (3D printed) to prevent light bleed between the pixels.
-            Special care had to be taken in the design of this light shroud to ensure reliability and manufacturability. The shroud is designed to clip onto existing through hole compnents suck as audio jack, which stay cooler than the PCB, in order to minimize plastic creep. The use of standoffs and screws was also avoided to minimize assembly time and cost. The shroud is designed to be manufacturable with a 3D printer, but can also be injection molded if needed.
+            Special care had to be taken in the design of this light shroud to ensure reliability and manufacturability. The shroud is designed to clip onto existing through-hole components, such as audio jacks, which stay cooler than the PCB, in order to minimize plastic creep. The use of standoffs and screws was also avoided to minimize assembly time and cost. The shroud is designed to be manufacturable with a 3D printer, but can also be injection molded if needed.
           </p>
+          <p>The other big challenge was the firmware for our digital modules. Luckily, my partner, Liz, is a knowledgeable PCB designer, but neither of us had experience with writing firmware for a production product. I took on the challenge to learn the implementation of our musical ideas into code, primarily in C++. Since our designs use ESP32 chips, I had to learn the intricacies of the ESP-IDF framework and how to optimize code for the dual core microcontroller. Since these chips have limited peripherals, I also learned to integrate external DAC, ADC, and GPIO chips using I2C, SPI and I2S.</p>
         </div>
 
         <!-- <div class="project-section">
@@ -64,7 +65,7 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Learnings</h3>
-          <p>Running this company (with my parter Liz) has taught me the difference between completing a home project, and designing and shipping a product from scratch that succeeds in the market. 
+          <p>Running this company (with my partner Liz) has taught me the difference between completing a home project, and designing and shipping a product from scratch that succeeds in the market.
             At home, small details can be overlooked, timelines can slip, and the end user is forgiving. 
             Shipping a product to the public is vastly different, as production costs, scalability, and reliability now become priority in the design. 
             Since Omnitone was our only source of income while starting it, and we self-funded the company, deadlines, and the consequences for missing them were very real.
