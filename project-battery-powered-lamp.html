@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Battery-Powered Lamp - Tristan</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <div class="header-content">
@@ -33,19 +35,35 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Overview</h3>
-          <p>This project was a birthday gift for my partner Liz. It is a cube-shaped lamp that features 216 individually addressable RGB LEDs. It features 5 different light patterns, with control over saturation and color themes. The light is battery powered and USB-C rechargeable so it can be used anywhere, such as camping trips.</p>
+          <p>This project was a birthday gift for my partner Liz. It is a cube-shaped lamp that features 216
+            individually addressable RGB LEDs. It features 5 different light patterns, with control over saturation and
+            color themes. The light is battery powered and USB-C rechargeable so it can be used anywhere, such as
+            camping trips.</p>
         </div>
 
         <div class="project-detail-gallery">
           <!-- <img src="cube-light/hero.png" alt="Battery-Powered Lamp" class="project-detail-image"> -->
-             <iframe class="project-video" src="https://www.youtube.com/embed/oSLvt2CoP5c" title="Battery-powered lamp demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="project-video" src="https://www.youtube.com/embed/oSLvt2CoP5c"
+            title="Battery-powered lamp demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Challenges & Solutions</h3>
-          <p>The original design featured solid wood rings to divide the rows of LEDs. This proved to be the wrong approach since the expansion and contraction of the wood across the grain as the seasons change could cause cracking in the wood. Furthermore, the aesthetic of alternating end and edge grain faces of the wood was not as visually appealing as continuous face grain. The design was then changed to have 3D printed rings with stained oak veneer adhered to the visible surface. A piece of plywood was used for the top for its dimensional stability. </p>
+          <p>The original design featured solid wood rings to divide the rows of LEDs. This proved to be the wrong
+            approach since the expansion and contraction of the wood across the grain as the seasons change could cause
+            cracking in the wood. Furthermore, the aesthetic of alternating end and edge grain faces of the wood was not
+            as visually appealing as continuous face grain. The design was then changed to have 3D printed rings with
+            stained oak veneer adhered to the visible surface. A piece of plywood was used for the top for its
+            dimensional stability. </p>
 
-          <p>To keep the user interface simple, a four-button capacitive-touch design was used to minimize moving parts and increase reliability. The four buttons are: power, minus, plus, and mode. The minus and plus buttons control the brightness of the lamp and the mode button changes the light pattern. As an added bonus feature, the saturation of the colors can be adjusted by holding the mode button and tapping the minus button. The color theme of the lamp can also be changed by holding the mode button and tapping the plus button. This cycles the patterns through the color wheel to set the desired mood. </p>
+          <p>To keep the user interface simple, a four-button capacitive-touch design was used to minimize moving parts
+            and increase reliability. The four buttons are: power, minus, plus, and mode. The minus and plus buttons
+            control the brightness of the lamp and the mode button changes the light pattern. As an added bonus feature,
+            the saturation of the colors can be adjusted by holding the mode button and tapping the minus button. The
+            color theme of the lamp can also be changed by holding the mode button and tapping the plus button. This
+            cycles the patterns through the color wheel to set the desired mood. </p>
 
           <p>The light diffuser rings are 3D printed from translucent plastic to provide even light distribution. </p>
         </div>
@@ -65,11 +83,14 @@
         <div class="project-section">
           <h3 class="project-section-title">Results & Outcomes</h3>
           <p>She loves it! It's great for setting the vibe at parties, and as ambient light while camping!</p>
-        
-         
         </div>
 
-        
+
+        <div class="project-section">
+          <h3 class="project-section-title">What I would do differently</h3>
+          <p>The BMS I sourced was the only one available locally within my budget, and the quality was a bit lacking. After some testing, I found that it would charge the cells above their recommended voltage. To avoid any possible overcharging issues, I had to design a circuit to cut power to the BMS and stop charging when the cells hit 4.2 V. This added a lot of complexity to the design and programming. Next time, I would do more research to find a higher-quality BMS or design a custom charging circuit.</p>
+        </div>
+
 
         <!-- <div class="project-section">
           <h3 class="project-section-title">Learnings</h3>
@@ -87,4 +108,5 @@
     <p>&copy; 2026 Tristan. All rights reserved.</p>
   </footer>
 </body>
+
 </html>

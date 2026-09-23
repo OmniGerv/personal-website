@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fire-Powered Phone Charger - Tristan</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <div class="header-content">
@@ -33,7 +35,8 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Overview</h3>
-          <p>This project integrates Peltier modules to convert heat generated from a campfire into electrical energy for charging devices.</p>
+          <p>This project integrates Peltier modules to convert heat generated from a campfire into electrical energy
+            for charging devices.</p>
         </div>
 
         <div class="project-detail-gallery">
@@ -42,23 +45,49 @@
 
         <div class="project-section">
           <h3 class="project-section-title">Challenges & Solutions</h3>
-          <p>This project was built for a university course which prompted us to build a product that harvested wasted energy. We decided to design a device that harvested heat from a campfire to charge devices while camping. This meant we had to balance performance with industrial design considerations, as it would be a consumer product. In order for the Peltier modules to work as efficiently as possible, we used a pin-style heat sink to keep the back side as cool as possible to create as big of a temperature gradient as possible. This also met the aesthetic requirements from our industrial designer.</p>
+          <p>This project was built for a university course which prompted us to build a product that harvested wasted
+            energy. We decided to design a device that harvested heat from a campfire to charge devices while camping.
+            This meant we had to balance performance with industrial design considerations, as it would be a consumer
+            product. In order for the Peltier modules to work as efficiently as possible, we used a pin-style heat sink
+            to keep the back side as cool as possible to create as big of a temperature gradient as possible. This also
+            met the aesthetic requirements from our industrial designer.</p>
         </div>
 
         <div class="project-section">
           <h3 class="project-section-title">Technical Details</h3>
-          <p>I designed an electrical charging system that used an ATTiny 85 microcontroller to monitor the voltage of the system to notify the user when the device was at a high enough energy output to charge a phone and energize the USB port. This microcontroller also monitored the temperature of the device to notify the user if the device was overheating. </p>
+          <p>I designed an electrical charging system that used an ATTiny 85 microcontroller to monitor the voltage of
+            the system to notify the user when the device was at a high enough energy output to charge a phone and
+            energize the USB port. This microcontroller also monitored the temperature of the device to notify the user
+            if the device was overheating. </p>
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">What I would do differently</h3>
+          <p>One thing I didn't consider was the voltage sag from the Peltier modules as current was drawn. When the
+            microcontroller detected that the Peltier modules were outputting enough voltage to energize the voltage
+            regulator, it would energize the USB port. However, when current flowed, the Peltier module voltage would
+            drop, and the microcontroller would cut power to the USB port. Only after the Peltier module voltage rose
+            above a certain threshold could it support the current flow without sagging below the functional voltage of
+            the regulator. I should account for this sag in the microcontroller programming by using a higher threshold
+            before energizing the USB port.</p>
+        </div>
+
+        <div class="project-detail-gallery" style="display: flex; gap: 1rem; align-items: flex-start;">
+          <img src="fire-powered-phone-charger/fire1.JPG" alt="Fire-powered phone charger detail shot 1"
+            class="project-detail-image" style="flex: 1; max-width: 50%;">
+          <img src="fire-powered-phone-charger/fire2.JPG" alt="Fire-powered phone charger detail shot 2"
+            class="project-detail-image" style="flex: 1; max-width: 50%;">
         </div>
 
         <!-- <div class="project-section">
           <h3 class="project-section-title">Results & Outcomes</h3>
           <p>Describe the final outcome, results, and any metrics or feedback.</p>
-        </div>
-
-        <div class="project-section">
-          <h3 class="project-section-title">Learnings</h3>
-          <p>Reflect on what you learned from this project.</p>
         </div> -->
+
+
+
+
+
       </div>
 
       <div style="margin-top: 3rem;">
@@ -71,4 +100,5 @@
     <p>&copy; 2026 Tristan. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
