@@ -6,7 +6,7 @@
   --secondary-bg: #49644f;
   --text-primary: #f5f1e8;
   --text-secondary: #e8dfd0;
-  --accent: #e5b03f;
+  --accent: #99762c;
   --accent-hover: #778b4f;
   --border-color: #992c08;
 }
@@ -231,7 +231,7 @@ section {
 
 .tag {
   display: inline-block;
-  background-color: var(--accent);
+  background-color: #b9881e;
   color: var(--text-primary);
   padding: 0.35rem 0.75rem;
   border-radius: 20px;
