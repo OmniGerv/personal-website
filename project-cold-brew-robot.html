@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cold Brew Robot - Tristan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="contact.html">Contact</a>
+        <!-- <a href="along-the-way.html">Along The Way</a> -->
+      </nav>
+      <img src="tristan-logo.png" alt="Logo" class="logo">
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="project-detail">
+        <div class="project-detail-header">
+          <h1>Cold Brew Robot</h1>
+          <div class="tags-container">
+            <span class="tag">electronics</span>
+            <span class="tag">product design</span>
+            <span class="tag">3d printing</span>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">Overview</h3>
+          <p>This project is a cold brew coffee dispenser that pulls pre made coffee from a large jug from the fridge
+            and dispenses a portion. It features 4 liquid chanels (coffee, milk, simple syrup and chocolate syrup), to
+            enable different recipes. It can make coffee with milk and sugar, mochas, and even chocolate milk! </p>
+        </div>
+
+        <div class="project-detail-gallery">
+          <!-- <img src="cube-light/hero.png" alt="Beam Light" class="project-detail-image"> -->
+          <iframe class="project-video" src="https://youtube.com/shorts/3EI2piKuIYU" title="Cold Brew Robot demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">Challenges & Solutions</h3>
+          <p>The main challenge for this project was the user interface. I wanted something very clean, almost analog
+            feeling. I ended up deciding to only use (ON)-OFF-(ON) switches (two way momentary contact) and some short
+            loops of the tubing being visible by the user as feedback. To select a recipe, the user presses down on the
+            various ingredients of that recipe to "load" the ingredients, and thus selecting the recipe. The user knows
+            that the ingredients are sucessfully selected as the robot will pull the liquid into the tubes visible
+            section on the front of the robot. With a valid recipe loaded, the user can press down on any of the
+            switches with a loaded ingredient and the robot will dispense the liquids in the correct proportions. If the
+            user wished to unload an ingredient, they can press up on the switch and the liquid will be pumped back into
+            the jug. After a short period of inactivity, the robot will automatically pump all liquids back into the
+            jugs to keep cold. </p>
+
+          <p>With 1 gallon of coffee and milk loaded, my partner and I stay well caffeinated for 2 weeks! I run warm
+            soapy water through the system once a month to keep it clean.</p>
+
+        </div>
+
+        <div class="project-section">
+          <h3 class="project-section-title">Technical Details</h3>
+          <p>The following are a list of the components used in this project:</p>
+          <ul>
+            <li>ESP32 with over the air updates</li>
+            <li>4 peristaltic pumps</li>
+            <li>4 switches</li>
+          </ul>
+        </div>
+
+        <!-- <div class="project-section">
+          <h3 class="project-section-title">Results & Outcomes</h3>
+          <p>She loves it! It's great for setting the vibe at parties, and as ambient light while camping!</p>
+        
+         
+        </div> -->
+
+
+
+        <!-- <div class="project-section">
+          <h3 class="project-section-title">Learnings</h3>
+          <p>Reflect on what you learned from this project.</p>
+        </div> -->
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <a href="portfolio.html">← Back to Portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tristan. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
